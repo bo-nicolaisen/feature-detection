@@ -13,6 +13,8 @@ function featureCheck() {
 
   if (geoloc) {
 
+
+    // async operator   first parameter is callback
     navigator.geolocation.getCurrentPosition(showLocation);
 
 
@@ -26,9 +28,7 @@ function featureCheck() {
 }
 
 
-
-
-
+// checks if geolocation is navigator
 function checkGeolocationFeature() {
 
   if ("geolocation" in navigator) {
@@ -63,7 +63,6 @@ function showLocation(myPos) {
 
 function alternativeView(){
   document.getElementById("app").innerHTML = "no geo location service";
-
 }
 
 
