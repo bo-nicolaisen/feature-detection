@@ -1,6 +1,9 @@
 
 
+// entrypoint
 featureCheck();
+
+
 
 
 // controller
@@ -23,7 +26,7 @@ function featureCheck() {
 }
 
 
-checkGeolocationFeature();
+
 
 
 function checkGeolocationFeature() {
